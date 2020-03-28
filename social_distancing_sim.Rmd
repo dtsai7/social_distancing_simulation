@@ -1,0 +1,46 @@
+---
+title: "social distancing simulation"
+author: "David Tsai"
+date: "3/28/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Load packages
+```{r}
+library(EpiModel) # mathematical modeling for infection disease dynamics
+library(extrafont)
+library(animation) 
+```
+
+### Susceptible-Infectious-Recovered (SIR) Model
+```{r}
+param = param.dcm(inf.prob = 0.1, 
+                  act.rate = 1, 
+                  rec.rate = 0.05,
+                  a.rate = 0, 
+                  ds.rate = 0, di.rate = 0.01, dr.rate = 0)
+# focus on act.rate
+# by social distancing, try to decrease that number
+```
+set the initial parameter of the population with 10,000 susceptible people, with 10 infected, and 0 recovered.
+```{r}
+init = init.dcm(s.num = 10000, i.num = 10, r.num = 0)
+```
+
+set the controls for the "Deterministic Compartmental Model"
+```{r}
+control = control.dcm(type = "SIR", nsteps = 1000, dt = 0.5)
+```
+
+run the simulation with the specified model parameters
+```{r}
+model = dcm(param, init, control)
+model.df = as.data.frame(model)
+head(model.df)
+```
+
+### Plot
