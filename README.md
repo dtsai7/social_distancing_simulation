@@ -11,3 +11,5 @@ how to “flatten the curve”](https://www.washingtonpost.com/graphics/2020/wor
 [Wikipedia - Compartmental models in epidemiology](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology)
 
 [Social clustering in epidemic spread on coevolving networks](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.99.062301)
+
+[Network Modeling for Epidemics](http://statnet.org/nme/)
