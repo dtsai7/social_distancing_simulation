@@ -1,4 +1,4 @@
-# social distancing simulation
+# Social Distancing Simulation
 
 <p align="center">
   <img src="flatten_the_curve.png" style="max-width:100%;">
