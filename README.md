@@ -1,5 +1,10 @@
 # social distancing simulation
 
+<p align="center">
+  <img src="flatten_the_curve.png" style="max-width:100%;">
+</p>
+
+
 References:
 
 [The New York Times - Flattening the Coronavirus Curve](https://www.nytimes.com/article/flatten-curve-coronavirus.html)
