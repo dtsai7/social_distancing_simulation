@@ -5,7 +5,7 @@
 </p>
 
 
-References:
+### References:
 
 [The New York Times - Flattening the Coronavirus Curve](https://www.nytimes.com/article/flatten-curve-coronavirus.html)
 
